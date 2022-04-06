@@ -27,8 +27,8 @@ public class AppConfig {
 		return appConfig;
 	}
 
-	public Map<String, String> getConfigurations() {
-		return configurations;
+	public String getProperty(String key) {
+		return configurations.get(key);
 	}
 
 	private void loadConfigurations() {
